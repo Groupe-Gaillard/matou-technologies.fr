@@ -168,3 +168,82 @@ main h2 {
 footer {
     margin: 80px 0 0;
 }
+
+/* --- job page --- */
+main.job-page {
+    --paddingLayout: calc(calc(100% - 66rem) / 2);
+    padding-left: max(var(--paddingLayout), 2.25rem);
+    padding-right: max(var(--paddingLayout), 2.25rem);
+    text-align: left;
+    line-height: 1.375;
+    h1,
+    h2,
+    h3 {
+        font-weight: bold;
+    }
+    h2,
+    h3,
+    p,
+    li {
+        color: #242529;
+    }
+    h1,
+    a {
+        color: #02588d;
+    }
+    h1 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    h2 {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: 0.25rem;
+        padding: 0;
+        font-size: 1.25rem;
+    }
+    h2 + h3 {
+        margin-top: 0;
+    }
+    p,
+    li {
+        font-size: 0.875rem;
+        margin-bottom: 0.5rem;
+    }
+    p {
+        margin-bottom: 0.5rem;
+    }
+    ul,
+    ol {
+        padding-left: 2rem;
+    }
+    ul {
+        list-style-type: disc;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main.job-page {
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        h3 {
+            font-size: 1.125rem;
+        }
+        p,
+        li {
+            font-size: 1rem;
+        }
+    }
+}
