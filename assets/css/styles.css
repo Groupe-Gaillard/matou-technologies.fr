@@ -37,7 +37,6 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -167,6 +166,19 @@ main h2 {
 }
 footer {
     margin: 80px 0 0;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+.footer__menu-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    a {
+        margin: 0 1rem;
+        color: #4338ca;
+    }
 }
 
 /* --- job page --- */
