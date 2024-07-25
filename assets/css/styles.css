@@ -132,10 +132,20 @@ table {
 /**************************************************/
 /**************************************************/
 
+/* ---- Colors ----- */
 body {
-    background: #ffffff;
+    --white: #fff;
+    --black: #000;
+    --gray01: #eee;
+    --dark: #242529;
+    --primary: #02588d;
+}
+/* ---- /Colors ----- */
+
+body {
+    background: var(--white);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #242529;
+    color: var(--dark);
     text-align: center;
     font-size: 12px;
 }
@@ -147,7 +157,7 @@ img {
 header {
     padding: 80px 0;
     margin: 0 0 40px;
-    background: #eee;
+    background: var(--gray01);
 }
 header img {
 }
@@ -156,7 +166,7 @@ main {
     margin: 40px 0;
 }
 main p {
-    color: #5a5c63;
+    color: var(--dark);
 }
 main h2 {
     display: block;
@@ -167,7 +177,7 @@ main h2 {
 footer {
     margin: 80px 0 0;
     padding: 1rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--gray01);
     text-align: center;
 }
 .footer__menu-container {
@@ -177,8 +187,11 @@ footer {
 
     a {
         margin: 0 1rem;
-        color: #4338ca;
+        color: var(--primary);
     }
+}
+a:hover {
+    text-decoration: none;
 }
 
 /* --- job page --- */
@@ -197,11 +210,12 @@ main.job-page {
     h3,
     p,
     li {
-        color: #242529;
+        color: var(--dark);
     }
     h1,
-    a {
-        color: #02588d;
+    a,
+    a:visited {
+        color: var(--primary);
     }
     h1 {
         margin-bottom: 2rem;
