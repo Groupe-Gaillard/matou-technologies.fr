@@ -16,10 +16,16 @@ module.exports = {
         light: "rgb(var(--color-light) / <alpha-value>)",
         dark: "rgb(var(--color-dark) / <alpha-value>)",
         info: "rgb(var(--color-info) / <alpha-value>)",
+        matouPrimaryOne: "#023FBB",
+        matouPrimaryTwo: "#F28705",
+        matouAccentOne: "#023373",
+        matouAccentTwo: "#636AF2",
+        matouAccentThree: "#BEF0FA",
+        matouAccentFour: "#FFC000",
+        matouAccentFive: "#FFA03A",
       },
       fontFamily: {
-        sans: ["'DM Sans Variable'", "Helvetica", "Verdana", "sans-serif"],
-        body: ["'DM Sans Variable'", "Helvetica", "Verdana", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       boxShadow: {
         inset: " inset 2px 2px 40px -20px rgba(0, 0, 0, 0.3)",

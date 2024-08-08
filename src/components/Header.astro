@@ -29,13 +29,13 @@ const isActive = (href) => {
     >
     {
       menu && (
-        <div class="nav-underline nav-links relative hidden flex-nowrap items-center gap-4 pl-4 tracking-wide transition-colors  md:flex ">
+        <div class="nav-underline nav-links relative hidden flex-nowrap items-center gap-4 pl-4 tracking-wide transition-colors md:flex">
           {menu.map((link) => (
             <a
               href={link.href}
               class={`${
                 isActive(link.href) ? "active font-bold" : ""
-              }  btn-replace`}
+              } btn-replace text-testOrange`}
               data-replace={link.label}
             >
               <span> {link.label}</span>
@@ -54,7 +54,7 @@ const isActive = (href) => {
             {cta.map((link) => (
               <a
                 href={link.href}
-                class={`btn btn-sm btn-ghost `}
+                class={`btn btn-sm btn-ghost`}
                 data-replace={link.label}
               >
                 <span> {link.label}</span>

@@ -140,10 +140,24 @@ body {
   @screen xs {
     --spacing: 2rem;
   }
-  font-family: "DM Sans Variable", "Adjusted Arial Fallback", "arial",
-    sans-serif;
+  font-family: "Poppins", sans-serif;
   --container-spacing: calc(var(--spacing) * 2);
   --grid-spacing: calc(var(--spacing) / 2);
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
 }
 
 .container {
@@ -354,7 +368,7 @@ body {
 /* BUTTONS */
 
 .btn {
-  @apply relative inline-flex gap-2 overflow-hidden whitespace-nowrap rounded-full px-2.5 py-1 text-sm font-semibold  outline-offset-4 transition-all duration-200  hover:bg-opacity-90 hover:shadow-md disabled:pointer-events-none disabled:opacity-50 disabled:grayscale;
+  @apply relative inline-flex gap-2 overflow-hidden whitespace-nowrap rounded-full px-2.5 py-1 text-sm font-semibold outline-offset-4 transition-all duration-200 hover:bg-opacity-90 hover:shadow-md disabled:pointer-events-none disabled:opacity-50 disabled:grayscale;
   &.btn-absolute {
     @apply absolute;
   }

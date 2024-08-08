@@ -14,8 +14,8 @@ import Auth from "@components/form/Auth.vue";
 import Init from "@components/common/Init.vue";
 import "@fontsource-variable/dm-sans";
 
-const lang = import.meta.env.WEBSITE_LANGUAGE || "en";
-const currency = import.meta.env.CURRENCY || "USD";
+const lang = import.meta.env.WEBSITE_LANGUAGE || "fr";
+const currency = import.meta.env.CURRENCY || "EUR";
 const { title, description, page_class, thumbnail, og_image, nav_color } =
   Astro.props;
 const navigation = await getEntry("config", "navigation");
@@ -40,6 +40,12 @@ const newsletters = () => {
 <!doctype html>
 <html lang={lang} data-currency={currency}>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <BaseHead
       title={title}
       description={description}
