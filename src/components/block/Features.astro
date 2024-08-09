@@ -12,10 +12,10 @@ const { content, features, style } = Astro.props;
 
   {
     features && (
-      <ul class="features my-10 flex flex-wrap justify-center gap-x-10 gap-y-10 sm:gap-y-20 ">
+      <ul class="features my-10 flex flex-wrap justify-center gap-x-10 gap-y-10 sm:gap-y-20">
         {features.map((feature, index) => (
           <li
-            class={`features__item fade-up items-left flex flex-1 flex-col rounded-md  text-center`}
+            class={`features__item fade-up items-left flex flex-1 flex-col rounded-md text-center`}
             style={`--animation-delay: ${(index + 1) * 150}ms`}
           >
             <div class="flex items-start gap-2">
@@ -25,11 +25,11 @@ const { content, features, style } = Astro.props;
                     feature.color || "surface-primary"
                   } grid h-8 w-8 shrink-0 place-items-center overflow-hidden rounded-full`}
                 >
-                  <Icon name={getIconName(feature.icon)} class={`h-5 w-5 `} />
+                  <Icon name={getIconName(feature.icon)} class={`h-5 w-5`} />
                 </div>
               )}
 
-              <h3 class="title-xs text-left ">{feature.title}</h3>
+              <h3 class="title-xs text-left">{feature.title}</h3>
             </div>
 
             {feature.content && (

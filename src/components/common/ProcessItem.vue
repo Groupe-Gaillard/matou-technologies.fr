@@ -14,8 +14,10 @@
       <button
         class="accordion-button group relative flex w-full items-center justify-between rounded-none py-4 text-left transition focus:outline-none"
         type="button"
-        @click="$showFaq == index ? showFaq.set(null) : showFaq.set(index)"
-        :aria-expanded="$showFaq == index"
+        @click="
+          $showProcess == index ? showProcess.set(null) : showProcess.set(index)
+        "
+        :aria-expanded="$showProcess == index"
         :aria-controls="`collapse_${index}`"
       >
         <span class="grow-1 title-xs py-5 pr-10">
@@ -25,7 +27,7 @@
         <div class="shrink-1 h-8 w-8 -translate-x-8">
           <div
             class="origin-center transition-transform duration-300"
-            :class="$showFaq == index ? '-rotate-90' : ' rotate-90'"
+            :class="$showProcess == index ? '-rotate-90' : 'rotate-90'"
           >
             <svg
               class="-mr-1 h-5 w-5"
@@ -75,7 +77,11 @@
         @before-leave="beforeLeave"
         @before-enter="onBeforeEnter"
       >
-        <div class="accordion-body" v-show="$showFaq == index" itemprop="text">
+        <div
+          class="accordion-body"
+          v-show="$showProcess == index"
+          itemprop="text"
+        >
           <slot />
         </div>
       </Transition>
@@ -85,7 +91,7 @@
 
 <script setup>
 import { useStore } from "@nanostores/vue";
-import { showFaq } from "@src/store";
+import { showProcess } from "@src/store";
 
 const props = defineProps({
   title: String,
@@ -94,7 +100,7 @@ const props = defineProps({
   className: String,
 });
 
-const $showFaq = useStore(showFaq);
+const $showProcess = useStore(showProcess);
 
 function onBeforeEnter(el) {
   el.style.maxHeight = "0";
@@ -143,7 +149,7 @@ function onLeave(el) {
     }
   }
 }
-.faq-grid {
+.process-grid {
   @apply grid gap-2;
 
   @screen md {

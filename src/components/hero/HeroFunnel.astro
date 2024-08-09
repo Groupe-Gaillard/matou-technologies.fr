@@ -2,19 +2,12 @@
 import Picture from "@components/media/Picture.astro";
 import { marked } from "marked";
 import { Icon } from "astro-icon/components";
-import Button from "@components/navigation/Button.astro";
-import VideoInline from "@components/media/VideoInline.vue";
-import VideoDialog from "@components/dialog/VideoDialog.vue";
-import VideoDialogBtn from "@components/media/VideoDialogBtn.vue";
+import ColoredText from "@components/ColoredText.astro";
 
 const { title, hero } = Astro.props;
 const { slug } = Astro.params;
 const hasImage = !!hero?.media?.thumbnail?.trim() || false;
 const hasBgImage = !!hero?.media?.background_image?.trim() || false;
-const hasPreviewVideo = !!hero?.media?.video_preview?.trim() || false;
-const hasVideo = !!hero?.media?.video_preview?.trim() || false;
-const hasEmbed = !!hero?.media?.video_id?.trim() || false;
-const hasMedia = hasImage || hasVideo || hasPreviewVideo;
 const mediaClass = () => {
   if (!hero?.media?.aspect) return "";
   if (hero.media.aspect == 1) return "aspect-1";
@@ -93,7 +86,7 @@ const mediaClass = () => {
         >
           <div class="mx-auto grid max-w-3xl gap-8 pt-20 md:pb-10">
             {hero?.title && (
-              <h1 class="title" set:html={marked.parse(hero.title)} />
+              <div class="title" set:html={marked.parse(hero.title)} />
             )}
             {hero.intro && (
               <div
@@ -101,63 +94,19 @@ const mediaClass = () => {
                 set:html={marked.parse(hero.intro)}
               />
             )}
-
-            {hero.buttons && hero.buttons.length > 0 && (
-              <div class="hero-funnel__buttons mt-2 flex flex-wrap gap-4">
-                {hero.buttons.map((btn) => (
-                  <Button {...btn} />
-                ))}
-              </div>
-            )}
             <slot />
           </div>
 
-          <div class="grid h-full w-full place-items-center">
-            {hasMedia && (
-              <VideoDialogBtn
-                client:visible
-                video_id={hero?.media?.video_id}
-                className={`w-full overflow-hidden rounded ${mediaClass()} ${
-                  hasEmbed ? "group" : ""
-                } ${
-                  hero.style.layout === "column" ? "max-w-lg" : ""
-                } hero-funnel__media`}
-              >
-                {hasPreviewVideo && (
-                  <VideoInline url={hero.media.video_preview} client:idle delay>
-                    <Picture
-                      src={
-                        hero?.media?.thumbnail
-                          ? hero.media.thumbnail
-                          : "/src/assets/system/video-placeholder.jpeg"
-                      }
-                      alt={hero.title}
-                      sizes="(min-width: 1450px) 580px, (min-width: 768px) calc(50vw - 4rem),  calc(100vw - 4rem)"
-                      aspect={hero.media?.aspect ? hero.media?.aspect : 1.777}
-                      layout="fullWidth"
-                      loading="eager"
-                    />
-                    {hasEmbed && (
-                      <div class="absolute inset-0 z-50 grid place-items-center">
-                        <Icon
-                          name="play"
-                          class="h-20 w-20 text-secondary transition-transform duration-300 group-hover:scale-125"
-                        />
-                      </div>
-                    )}
-                  </VideoInline>
-                )}
-                {!hasPreviewVideo && (
-                  <Picture
-                    src={hero.media.thumbnail}
-                    alt={hero.title}
-                    sizes="(min-width: 1450px) 580px, (min-width: 768px) calc(50vw - 4rem),  calc(100vw - 4rem)"
-                    aspect={hero.media?.aspect ? hero.media?.aspect : 1.777}
-                    layout="fullWidth"
-                    loading="eager"
-                  />
-                )}
-              </VideoDialogBtn>
+          <div class="hero-picture grid h-full w-full place-items-center">
+            {hasImage && (
+              <Picture
+                src={hero.media.thumbnail}
+                alt={hero.title}
+                sizes="(min-width: 1450px) 580px, (min-width: 768px) calc(50vw - 4rem),  calc(100vw - 4rem)"
+                aspect={hero.media?.aspect ? hero.media?.aspect : 1}
+                layout="fullWidth"
+                loading="eager"
+              />
             )}
           </div>
         </div>
@@ -187,17 +136,6 @@ const mediaClass = () => {
     </clipPath>
   </defs>
 </svg>
-{
-  hasEmbed && (
-    <VideoDialog
-      client:idle
-      video_id={hero?.media?.video_id}
-      embed={hero?.media?.embed}
-    >
-      <Icon name="close" class="w-6" />
-    </VideoDialog>
-  )
-}
 
 <style lang="postcss" is:global>
   
@@ -212,8 +150,8 @@ const mediaClass = () => {
     backface-visibility: hidden; 
     background-image: 
     
-    radial-gradient(50vMax at -10vw -20vw, theme(colors.secondary) 0%, theme(colors.secondary / 80%)  40%, theme(colors.secondary / 0%)  100%),
-    radial-gradient(60vMax at 100vw 100vh, theme(colors.primary) 0%, theme(colors.primary / 80%)  40%, theme(colors.primary / 0%)  100%);
+    radial-gradient(50vMax at -10vw -20vw, theme(colors.matouAccentThree) 0%, theme(colors.matouAccentThree / 80%)  40%, theme(colors.matouAccentThree / 0%)  100%),
+    radial-gradient(60vMax at 100vw 100vh, theme(colors.matouAccentThree) 0%, theme(colors.matouAccentThree / 80%)  40%, theme(colors.matouAccentThree / 0%)  100%);
     
      &:after {
     content: "";
@@ -224,15 +162,12 @@ const mediaClass = () => {
   }
 
   .hero-funnel {
-    min-height: max(80vh, 30rem);
+    min-height: max(60vh, 30rem);
     @apply z-20 overflow-hidden grid place-items-center;
 
     &__media {
       max-height: max(20rem, 70vh);
       
-    }
-    &__buttons {
-      @apply justify-center ;
     }
 
     &__col-grid {
@@ -268,6 +203,10 @@ const mediaClass = () => {
     .hero-funnel__divider {
       height: calc(100% - 80vh);
     }
+  }
+
+  .hero-picture img { 
+    border-radius: 50%;
   }
     
   }

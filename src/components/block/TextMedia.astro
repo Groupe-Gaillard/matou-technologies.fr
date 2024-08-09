@@ -42,8 +42,9 @@ if (style.template === "column") {
   sizes = `min(100vw, ${containerSizes[style.container]})`;
 }
 
-const imageName = media.thumbnail.split("/").pop().split(".")[0];
-
+const imageName = media.thumbnail
+  ? media.thumbnail.split("/").pop().split(".")[0]
+  : "";
 const columnClass = () => {
   if (style.template !== "column") return "";
   return `column-grid column-grid-${media.image_size || 50}`;

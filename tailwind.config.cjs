@@ -27,6 +27,11 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      fontSize: {
+        thin: 300,
+        regular: 400,
+        bold: 700,
+      },
       boxShadow: {
         inset: " inset 2px 2px 40px -20px rgba(0, 0, 0, 0.3)",
         "inset-s": " inset 2px 2px 30px -10px rgba(0, 0, 0, 0.4)",

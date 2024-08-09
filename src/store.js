@@ -16,4 +16,4 @@ export const showDialog = atom({
   show: false,
 });
 
-export const showFaq = atom(null);
+export const showProcess = atom(null);

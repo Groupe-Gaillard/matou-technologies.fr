@@ -25,7 +25,11 @@ const isActive = (href) => {
       href="/"
       aria-label={title}
       class="flex h-full items-center justify-start"
-      ><Icon name="logo" class="h-6" /></a
+      ><img
+        src="/logos/logo-matou-technologies-white-horizontal.svg"
+        alt="Matou Technologies Logo"
+        class="h-6"
+      /></a
     >
     {
       menu && (
@@ -48,22 +52,6 @@ const isActive = (href) => {
     <div
       class="nav-underline relative ml-auto flex flex-nowrap items-center justify-end gap-2 pl-4"
     >
-      {
-        cta && cta.length > 0 && (
-          <div class="hidden sm:flex">
-            {cta.map((link) => (
-              <a
-                href={link.href}
-                class={`btn btn-sm btn-ghost`}
-                data-replace={link.label}
-              >
-                <span> {link.label}</span>
-              </a>
-            ))}
-          </div>
-        )
-      }
-
       <ColorSwitch client:load />
 
       <div class="md:hidden">
