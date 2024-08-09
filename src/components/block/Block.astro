@@ -17,7 +17,14 @@ const { slot, ...props } = Astro.props;
     props?.style?.block_class ? props.style.block_class : "py-8 sm:py-20"
   }`}
 >
-  {props.component === "ImageTextSection" && <ImageTextSection {...props} />}
+  {
+    props.component === "ImageTextSection" && (
+      <>
+        {console.log("Rendering ImageTextSection with props:", props)}
+        <ImageTextSection {...props} />
+      </>
+    )
+  }
   {props.component === "ImageGallery" && <ImageGallery {...props} />}
   {props.component === "TextMedia" && <TextMedia {...props} />}
   {props.component === "RichText" && <RichText {...props} />}
