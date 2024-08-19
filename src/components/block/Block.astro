@@ -6,7 +6,7 @@ import RichText from "./RichText.astro";
 import Features from "./Features.astro";
 import PricingTable from "./PricingTable.astro";
 import Process from "./Process.astro";
-import ImageTextSection from "./ImageTextSection.astro";
+import MultiCards from "./MultiCards.astro";
 
 const { slot, ...props } = Astro.props;
 ---
@@ -17,11 +17,11 @@ const { slot, ...props } = Astro.props;
     props?.style?.block_class ? props.style.block_class : "py-8 sm:py-20"
   }`}
 >
-  {props.component === "ImageTextSection" && <ImageTextSection {...props} />}
   {props.component === "ImageGallery" && <ImageGallery {...props} />}
   {props.component === "TextMedia" && <TextMedia {...props} />}
   {props.component === "RichText" && <RichText {...props} />}
   {props.component === "Features" && <Features {...props} />}
   {props.component === "PricingTable" && <PricingTable {...props} />}
   {props.component === "Process" && <Process {...props} />}
+  {props.component === "MultiCards" && <MultiCards {...props} />}
 </Intersecting>
