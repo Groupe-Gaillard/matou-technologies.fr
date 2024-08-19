@@ -348,9 +348,6 @@ body {
     @apply text-lg font-bold leading-none;
     text-wrap: balance;
   }
-  p {
-    text-wrap: balance;
-  }
 
   table {
     @apply my-8 w-full;
@@ -381,7 +378,6 @@ body {
 
     li {
       @apply py-2;
-      text-wrap: balance;
       &::marker {
         @apply text-primary;
       }
