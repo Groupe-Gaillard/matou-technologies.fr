@@ -24,13 +24,10 @@ const isActive = (href) => {
     <a
       href="/"
       aria-label={title}
-      class="flex h-full items-center justify-start"
-      ><img
-        src="/logos/logo-matou-technologies-white-horizontal.svg"
-        alt="Matou Technologies Logo"
-        class="h-6"
-      /></a
+      class="flex h-full w-24 items-center justify-start md:w-36"
     >
+      <Icon name="logo-matou" class="h-auto w-full" slot="logo" />
+    </a>
     {
       menu && (
         <div class="nav-underline nav-links relative hidden flex-nowrap items-center gap-4 pl-4 tracking-wide transition-colors md:flex">
@@ -63,7 +60,7 @@ const isActive = (href) => {
         >
           <Icon name="menu-solid" class="h-10 w-10" slot="menu" />
           <Icon name="close" class="h-10 w-10" slot="close" />
-          <Icon name="logo" class="w-full" slot="logo" />
+          <Icon name="logo-matou" class="h-auto w-full" slot="logo" />
 
           <div
             class="relatives flex w-full flex-wrap justify-center gap-2 py-4"
