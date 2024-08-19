@@ -391,6 +391,9 @@ body {
       @apply my-1 ml-4;
     }
   }
+  strong {
+    font-weight: bold;
+  }
 }
 
 /* BUTTONS */

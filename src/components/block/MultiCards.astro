@@ -4,7 +4,7 @@ import { Icon } from "astro-icon/components";
 import Button from "@components/navigation/Button.astro";
 import { marked } from "marked";
 
-const { title, cards, style, cards_by_row } = Astro.props;
+const { title, cards, style, cards_by_row, content } = Astro.props;
 const id = title ? slugify(title) : "multi-cards";
 const cardsByRow = cards_by_row ?? 3;
 const lessCardsByRow = cardsByRow - 1;
@@ -15,6 +15,9 @@ const lessCardsByRow = cardsByRow - 1;
   class={`container-${style.container} fade-up rounded-md features grid gap-8 scroll-m-8`}
 >
   {title && <h1 class="title-sm fade-up"> {title}</h1>}
+
+  {content && <div set:html={marked.parse(content)} class="richtext fade-up" />}
+
   {
     cards && cards.length > 0 && (
       <div class="card__gap-container flex flex-wrap gap-8">

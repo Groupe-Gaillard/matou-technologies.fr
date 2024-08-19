@@ -155,19 +155,12 @@ export const settings = {
       file: "src/content/config/contact.mdx",
 
       fields: [
-        { name: "email", label: t("email"), widget: "string", required: true },
+        { name: "email", label: "E-mail", widget: "string", required: true },
         {
           name: "phone_label",
-          label: "Phone Label",
+          label: "Téléphone",
           widget: "string",
           required: false,
-        },
-        {
-          name: "phone_link",
-          label: t("phone_link"),
-          widget: "string",
-          required: false,
-          default: "tel:+316000000",
         },
         {
           name: "social",

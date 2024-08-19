@@ -2,11 +2,13 @@
 import { marked } from "marked";
 import ProcessItem from "@components/common/ProcessItem.vue";
 
-const { title, items, style, id } = Astro.props;
+const { title, items, style, id, content } = Astro.props;
 ---
 
 <div class={`container-${style.container} grid `}>
-  <h2 class="title-md fade-in font-bold">{title}</h2>
+  <h2 class="title-md fade-in mb-12 font-bold">{title}</h2>
+
+  {content && <div set:html={marked.parse(content)} class="richtext fade-up" />}
 
   <div
     class={`accordion relative py-5 surface-base-overlay fade-up`}

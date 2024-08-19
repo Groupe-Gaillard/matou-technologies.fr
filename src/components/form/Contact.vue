@@ -16,7 +16,7 @@
           @click="showPopper = !showPopper"
           class="select w-full text-left"
         >
-          {{ !!topic ? topic : "Select" }}
+          {{ !!topic ? topic : "Sélectionner l'objet de votre message" }}
         </button>
 
         <template #content>
@@ -43,7 +43,7 @@
 
       <label
         class="peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary"
-        >{{ t("topic") }} *</label
+        >Objet *</label
       >
     </div>
     <div class="input-group">
@@ -56,7 +56,7 @@
       />
       <label
         class="peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary"
-        >{{ t("name") }} *</label
+        >Nom *</label
       >
     </div>
 
@@ -70,7 +70,7 @@
       />
       <label
         class="peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary"
-        >{{ t("email") }} *</label
+        >E-mail *</label
       >
     </div>
     <div class="input-group">
@@ -83,7 +83,7 @@
       />
       <label
         class="peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary"
-        >{{ t("phone") }}</label
+        >Téléphone</label
       >
     </div>
     <div class="input-group">
@@ -100,7 +100,7 @@
       <label
         class="peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary"
       >
-        {{ t("message") }} *</label
+        Votre message *</label
       >
     </div>
     <div
@@ -111,9 +111,7 @@
         type="submit"
         :disabled="!canSubmit"
       >
-        <span>
-          {{ t("submit") }}
-        </span>
+        <span> Envoyer </span>
         <svg
           class="-mr-1 h-5 w-5"
           xmlns="http://www.w3.org/2000/svg"
@@ -247,9 +245,11 @@ const submit = () => {
       headers: { "Content-Type": "application/json" },
     })
       .then((r) => r.json())
-      .then((data) => { 
+      .then((data) => {
         if (data.status === "ok") {
-          toast.success(t("contact_thanks"));
+          toast.success(
+            "Merci pour votre message. Nous revenons vers vous rapidement.",
+          );
           form.email = "";
           form.name = "";
           form.phone = "";
@@ -257,12 +257,16 @@ const submit = () => {
           input.value = "";
           hide();
         } else {
-          toast.error(t("contact_error"));
+          toast.error(
+            "Il y a eu un problème, merci d'essayer à nouveau plus tard",
+          );
         }
       })
       .catch((e) => {
         console.log("error", e);
-        toast.error(t("contact_error"));
+        toast.error(
+          "Il y a eu un problème, merci d'essayer à nouveau plus tard",
+        );
       })
       .finally(() => {
         loading.value = false;

@@ -6,9 +6,11 @@ import Button from "@components/navigation/Button.astro";
 import VideoInline from "@components/media/VideoInline.vue";
 import VideoDialog from "@components/dialog/VideoDialog.vue";
 import VideoDialogBtn from "@components/media/VideoDialogBtn.vue";
+import { slugify } from "@util/helpers";
 
-const { media, style, content, buttons } = Astro.props;
+const { media, style, content, buttons, title } = Astro.props;
 
+const id = title ? slugify(title) : "multi-cards";
 const renderedContent = marked.parse(content);
 const containerSizes = {
   sm: "40rem", //640px
@@ -28,11 +30,11 @@ if (style.template === "column") {
   const sizesArray = [`(max-width: 767px) calc(100vw - 4rem)`];
 
   sizesArray.push(
-    `(max-width: ${containerSizes[style.container]}) calc((100vw - 6rem) / ${percent} )`,
+    `(max-width: ${containerSizes[style.container]}) calc((100vw - 6rem) / ${percent} )`
   );
 
   sizesArray.push(
-    `(min-width: ${containerSizes[style.container]}) calc(${containerSizes[style.container]} / ${percent} - 2rem)`,
+    `(min-width: ${containerSizes[style.container]}) calc(${containerSizes[style.container]} / ${percent} - 2rem)`
   );
 
   sizesArray.push(`calc(100vw - 2rem)`);
@@ -65,6 +67,7 @@ const hasEmbed = !!media?.video_id?.trim() || false;
 ---
 
 <div
+  id={id}
   class={`container-${
     style.container
   } ${columnClass()} text-image gap-8 text-image__${style.template} ${
@@ -230,7 +233,7 @@ const hasEmbed = !!media?.video_id?.trim() || false;
     <div class="my-auto">
       <div
         set:html={renderedContent}
-        class="richtext fade-up"
+        class={`${style.content_class} richtext fade-up`}
         style="--animation-delay: 0.4s"
       />
 
