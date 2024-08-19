@@ -3,8 +3,8 @@
 @layer base {
   :root {
     --font-var-settings-headings: "wght" 700, "opsz" 9;
-    --color-primary: 243 76 24;
-    --color-secondary: 250 195 12;
+    --color-primary: 2 63 187;
+    --color-secondary: 242 135 5;
     --color-accent: 52 62 112;
     --color-warning: 202 121 45;
     --color-danger: 180 25 14;
@@ -26,7 +26,7 @@
     --plyr-control-radius: 2rem;
 
     --popper-theme-background-color: theme(colors.primary);
-    --popper-theme-background-color-hover: theme(colors.primary);
+    --popper-theme-background-color-hover: theme(colors.matouPrimaryDark01);
     --popper-theme-text-color: theme(colors.light);
     --popper-theme-border-width: 0px;
     --popper-theme-border-style: solid;
@@ -54,8 +54,8 @@ html {
 body {
   --toastify-color-light: theme(colors.light);
   --toastify-color-dark: theme(colors.dark);
-  --toastify-color-info: theme(colors.primary);
-  --toastify-color-success: theme(colors.primary);
+  --toastify-color-info: theme(colors.info);
+  --toastify-color-success: theme(colors.success);
   --toastify-color-warning: theme(colors.warning);
   --toastify-color-error: theme(colors.danger);
   .Toastify {
@@ -130,6 +130,34 @@ body {
 }
 .surface-info {
   @apply bg-info text-light;
+  a:not([class]) {
+    @apply text-light;
+  }
+}
+
+.surface-matou-primary-dark01 {
+  @apply bg-matouPrimaryDark01 text-white dark:text-white;
+  a:not([class]) {
+    @apply text-light;
+  }
+}
+
+.surface-matou-primary-light01 {
+  @apply bg-matouPrimaryLight01 text-black dark:text-black;
+  a:not([class]) {
+    @apply text-light;
+  }
+}
+
+.surface-matou-primary-light02 {
+  @apply bg-matouPrimaryLight02 text-black dark:text-black;
+  a:not([class]) {
+    @apply text-light;
+  }
+}
+
+.surface-matou-secondary-light01 {
+  @apply bg-matouSecondaryLight01 text-black dark:text-black;
   a:not([class]) {
     @apply text-light;
   }
