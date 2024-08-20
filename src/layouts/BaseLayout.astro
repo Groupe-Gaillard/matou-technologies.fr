@@ -157,56 +157,5 @@ const newsletters = () => {
         ]}
       />
     </Dialog>
-
-    {
-      newsletters().map((item) => (
-        <Dialog link={item.link} type="newsletter" client:idle>
-          <Newsletter client:visible slot="content" data={item} />
-
-          <Picture
-            slot="image"
-            src={item.thumbnail}
-            alt={item.title}
-            sizes="50vw"
-            aspect={4 / 5}
-            layout="fill"
-            loading="lazy"
-            artDirectives={[
-              {
-                media: "(max-width: 768px)",
-                aspect: 21 / 9,
-                layout: "constrained",
-                src: item.thumbnail,
-                breakpoints: [500, 601, 768, 820, 962],
-              },
-            ]}
-          />
-        </Dialog>
-      ))
-    }
-
-    <Dialog link="auth" type="auth" client:idle>
-      <div slot="content">
-        <Auth client:visible />
-      </div>
-      <Picture
-        slot="image"
-        src={contact.data.auth?.thumbnail}
-        alt={`Auth`}
-        sizes="(max-width: 768px) calc(100vw - 4rem), (min-width: 1024px) 440px, calc(40vw - 4rem)"
-        aspect={4 / 5}
-        layout="fill"
-        loading="lazy"
-        artDirectives={[
-          {
-            media: "(max-width: 768px)",
-            aspect: 21 / 9,
-            layout: "constrained",
-            src: contact.data.auth?.thumbnail,
-            breakpoints: [500, 601, 768, 820, 962],
-          },
-        ]}
-      />
-    </Dialog>
   </body>
 </html>
