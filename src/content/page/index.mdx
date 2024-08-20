@@ -20,11 +20,11 @@ intro: >
 style:
   hero_template: image
   template: full
-  container: sm
+  container: lg
   content_class: py-20 text-center
   page_class: ""
   card_template: grid
-  hero_surface: surface-dark
+  hero_surface: surface-light
   hero_image_opacity: ""
   nav_color: light
 thumbnail: /src/assets/logo/logo-matou-technologies-black-horizontal-svg.jpg
@@ -32,8 +32,9 @@ pubDate: August 21 2024
 hero:
   media:
     thumbnail: /src/assets/cat-tie-blue-background.jpg
-    background_image: ""
-    image_opacity: "0.2"
+    thumbnail_opacity: "0"
+    background_image: /src/assets/header.jpg
+    image_opacity: "1"
   background: pattern
   style:
     layout: column
@@ -76,7 +77,7 @@ blocks:
     content: |+
       ## Nos Valeurs
 
-      Nous caressons l'idée d'une relation client basée sur **des valeurs fortes issues de la personalité des Matous**.
+      ### Nous caressons l'idée d'une relation client basée sur <span style="color: #F28705">des valeurs fortes issues de la personnalité des Matous</span>.
 
     features:
       - title: Rester joueur
@@ -103,7 +104,9 @@ blocks:
 
   - type: expertise
     component: MultiCards
-    title: Expertise
+    title: Notre expertise
+    content: |
+      ### L’équipe des Matous met à disposition de ses clients <span style="color: #F28705">un savoir-faire et une expertise aiguisée</span>.
     cards_by_row: 3
     style:
       container: xl
@@ -135,8 +138,9 @@ blocks:
 
   - type: process
     component: Process
-    title: Processus
-    content: Nous vous ferons profiter de **notre technique de chasse éprouvé basée en 7 étapes**.
+    title: Notre processus
+    content: |
+      ### Nous avons développé <span style="color: #F28705">une technique d’approche en 7 étapes</span> pour répondre aux besoins de nos clients.
     style:
       container: xl
     id: a3f164ee-e7bd-48c2-a118-0233f7d02b1b
@@ -183,37 +187,35 @@ blocks:
           Évaluation post-projet pour
           identifier les améliorations.
 
-  - type: objectifs
-    component: MultiCards
-    title: Objectifs
-    content: Nous avons établi une approche bien pensée pour **répondre à vos besoins actuels et à venir**.
-    cards_by_row: 2
+  - type: features
+    component: Features
     style:
       container: xl
-    cards:
+      block_class: py-20
+    content: |+
+      ## Nos objectifs
+
+      ### <span style="color: #F28705">Pour vous permettre de retomber sur vos pattes en toute circonstance</span> nous définissons ensemble vos objectifs lors de nos collaborations.
+    features:
       - title: Alignement stratégique du système d’information
-        surface: surface-primary
         content: Harmoniser la stratégie de
           développement des technologies de
           l'information avec la stratégie
           globale de l'entreprise pour assurer
           une cohérence parfaite.
       - title: Préparation pour l’industrie du futur
-        surface: surface-matou-primary-dark01
         content: La modernisation du système
           d'information permet à l'entreprise
           d'adopter de nouvelles technologies,
           notamment Data, générant ainsi une
           valeur ajoutée pour ses activités.
       - title: Optimisation des processus
-        surface: surface-matou-primary-light01
         content: En analysant et en formalisant les
           processus métier, il devient
           possible d'identifier les inefficacités,
           les doublons et les opportunités
           d'amélioration.
-      - title: Réductiondes risques
-        surface: surface-matou-primary-light02
+      - title: Réduction des risques
         content: Une connaissance approfondie du
           système d'information aide à
           atténuer les risques opérationnels
@@ -225,7 +227,9 @@ blocks:
       container: xl
       block_class: py-20
     content: |+
-      ## Technologies
+      ## Nos technologies
+
+      ### Nous sommes convaincus que pour répondre à vos besoins actuels et à venir, vous devez pouvoir vous appuyer sur des technologies éprouvées. Les Matous s’occupent de tout et choisissent <span style="color: #F28705">les technologies les plus adaptées à votre situation et à vos enjeux</span>.
     features:
       - title: Langages
         content: >
@@ -268,25 +272,33 @@ blocks:
           Firewalls, IDS/IPS, VPN, DLP (Data Loss Prevention)
         color: surface-primary
 
+  - type: rich_text
+    component: RichText
+    content: >-
+      ## Nos projets clients
+
+      ### Ils nous ont fait confiance et <span style="color: #F28705">patounent avec nous</span>.
+    style:
+      container: xl
+      block_class: "pb-0"
+
   - type: text_media
     component: TextMedia
     style:
       container: xl
       template: column
-      reverse: true
+      reverse: false
       animate: false
-      block_class: ""
+      block_class: "py-0"
       image_opacity: ""
     media:
       image_size: "50"
-      thumbnail: /src/assets/cat-yellow-background.jpg
+      thumbnail: /src/assets/clients-matou.jpg
       title: Image
       image_opacity: ""
     content_class: ""
     content: >-
-      ## Projets clients
-
-      ### Groupe Gaillard - EnergieMédical - Paramat
+      #### Groupe Gaillard - EnergieMédical - Paramat
 
       * ERP
 
@@ -304,7 +316,23 @@ blocks:
 
       * etc.
 
-      ### New Planet Media
+  - type: text_media
+    component: TextMedia
+    style:
+      container: xl
+      template: column
+      reverse: true
+      animate: false
+      block_class: "pt-0"
+      image_opacity: ""
+    media:
+      image_size: "50"
+      thumbnail: /src/assets/clients-matou-2.jpg
+      title: Image
+      image_opacity: ""
+    content_class: ""
+    content: >-
+      #### New Planet Media
 
       **planet.fr - e-sante.fr - medisite**
 
@@ -323,7 +351,7 @@ blocks:
       template: column
       reverse: false
       animate: false
-      block_class: "ici"
+      block_class: "my-12"
       image_opacity: ""
     media:
       image_size: "33"
@@ -331,7 +359,9 @@ blocks:
       title: Image
       image_opacity: ""
     content: >-
-      ## Partenariats industriels
+      ## Nos partenariats industriels
+
+      ### Pour vous faire ronronner plus encore, l’approche des Matous consiste à <span style="color: #F28705">combiner une expertise aiguisée des équipes à celle de partenaires stratégiques</span>. 
 
       MATOU Technologies développe des partenariats
       stratégiques avec des entreprises, fournisseurs de

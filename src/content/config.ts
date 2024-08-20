@@ -26,6 +26,7 @@ const blocks = z
           image_size: z.string().optional(),
           image_opacity: z.string().optional(),
           thumbnail: z.string().optional(),
+          thumbnail_opacity: z.string().optional(),
           title: z.string().optional(),
           video_preview: z.string().optional(),
           video_id: z.string().optional(),
@@ -248,6 +249,7 @@ const page = defineCollection({
         media: z
           .object({
             thumbnail: z.string().optional(),
+            thumbnail_opacity: z.string().optional(),
             background_image: z.string().optional(),
             video_id: z.string().optional(),
             image_opacity: z.string().optional(),
