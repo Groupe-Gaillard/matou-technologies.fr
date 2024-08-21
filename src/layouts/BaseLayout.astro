@@ -1,7 +1,6 @@
 ---
 import { getEntry } from "astro:content";
 import { t } from "@util/translate";
-import { Icon } from "astro-icon/components";
 import { marked } from "marked";
 import Picture from "@components/media/Picture.astro";
 import BaseHead from "@components/BaseHead.astro";
@@ -9,8 +8,6 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Contact from "@components/form/Contact.vue";
 import Dialog from "@components/dialog/Dialog.vue";
-import Newsletter from "@components/form/Newsletter.vue";
-import Auth from "@components/form/Auth.vue";
 import Init from "@components/common/Init.vue";
 import "@fontsource-variable/dm-sans";
 
@@ -21,20 +18,6 @@ const { title, description, page_class, thumbnail, og_image, nav_color } =
 const navigation = await getEntry("config", "navigation");
 const about = await getEntry("config", "about");
 const contact = await getEntry("config", "contact");
-
-const newsletters = () => {
-  const data = JSON.parse(JSON.stringify(contact.data.newsletter));
-  let items;
-  if (
-    contact?.data?.newsletter?.list &&
-    contact.data.newsletter.list.length > 0
-  ) {
-    items = contact.data.newsletter.list;
-    delete data.list;
-  }
-
-  return [...items, data];
-};
 ---
 
 <!doctype html>
