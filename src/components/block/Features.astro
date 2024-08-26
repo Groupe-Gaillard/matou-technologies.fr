@@ -6,13 +6,13 @@ const { content, features, style } = Astro.props;
 ---
 
 <div
-  class={`container-${style.container} fade-up rounded-md features grid gap-8`}
+  class={`container-${style.container} fade-up rounded-md features grid gap-4`}
 >
   {content && <div set:html={marked.parse(content)} class="richtext fade-up" />}
 
   {
     features && (
-      <ul class="features my-10 flex flex-wrap justify-center gap-x-10 gap-y-10 sm:gap-y-20">
+      <ul class="features my-6 flex flex-wrap justify-center gap-x-10 gap-y-10 sm:gap-y-20">
         {features.map((feature, index) => (
           <li
             class={`features__item fade-up items-left flex flex-1 flex-col rounded-md text-center`}

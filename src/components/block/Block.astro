@@ -14,7 +14,7 @@ const { slot, ...props } = Astro.props;
 <Intersecting
   client:visible
   className={` ${props?.style?.surface || ""} ${
-    props?.style?.block_class ? props.style.block_class : "py-8 sm:py-20"
+    props?.style?.block_class ? props.style.block_class : "py-4 sm:py-10"
   }`}
 >
   {props.component === "ImageGallery" && <ImageGallery {...props} />}
