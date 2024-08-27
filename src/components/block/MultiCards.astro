@@ -20,14 +20,14 @@ const lessCardsByRow = cardsByRow - 1;
 
   {
     cards && cards.length > 0 && (
-      <div class="card__gap-container flex flex-wrap gap-8">
+      <div class="card__gap-container md:flex md:flex-wrap md:gap-8">
         {cards.map((card) => (
-          <div class="card-price card__size-card flex overflow-hidden rounded shadow-2xl @container">
-            <div class="price-grid grid w-full">
+          <div class="card-container card__size-card mb-8 flex overflow-hidden rounded shadow-2xl @container md:mb-0">
+            <div class="card-grid grid w-full">
               <div class={`relative h-fit ${card.surface}`}>
                 <div class="px-8 pb-14 pt-8">
                   <div class="pb-4">
-                    <span class="title-sm font-medium tracking-tight">
+                    <span class="title-xs font-medium tracking-tight">
                       {card.title}
                     </span>
                   </div>
@@ -69,11 +69,11 @@ const lessCardsByRow = cardsByRow - 1;
 </div>
 
 <style define:vars={{ cardsByRow, lessCardsByRow }}>
-  .price-grid {
+  .card-grid {
     grid-template-rows: min-content auto min-content;
   }
 
-  .card-price {
+  .card-container {
     @apply bg-white text-dark dark:bg-black dark:text-light;
     .shape-fill {
       @apply fill-white dark:fill-black;
@@ -87,8 +87,17 @@ const lessCardsByRow = cardsByRow - 1;
       }
     }
   }
-  .card__size-card {
-    --marginBetweenCards: calc(var(--lessCardsByRow) * 8 * 5px);
-    width: calc((100% - var(--marginBetweenCards)) / var(--cardsByRow));
+
+  @media (min-width: 768px) {
+    .card__size-card {
+      --marginBetweenCards: calc(8 * 5px);
+      width: calc((100% - var(--marginBetweenCards)) / 2);
+    }
+  }
+  @media (min-width: 1024px) {
+    .card__size-card {
+      --marginBetweenCards: calc(var(--lessCardsByRow) * 8 * 5px);
+      width: calc((100% - var(--marginBetweenCards)) / var(--cardsByRow));
+    }
   }
 </style>
