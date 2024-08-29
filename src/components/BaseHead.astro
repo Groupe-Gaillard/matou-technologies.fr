@@ -1,0 +1,107 @@
+---
+import { getEntry } from "astro:content";
+import { ViewTransitions } from "astro:transitions";
+import { getImage } from "astro:assets";
+
+import "../styles/global.css";
+
+const { data } = await getEntry("config", "about");
+
+interface Props {
+  title: string;
+  description: string;
+  thumbnail?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const { title, description, thumbnail } = Astro.props;
+
+let socialImage;
+const pageTitle = `${title} | ${data.sitename}`;
+
+/* SOCIAL IMAGE */
+if (thumbnail) {
+  const allImages = import.meta.glob("/src/assets/*.{jpeg,jpg,png,gif}");
+
+  const imgObj = (await allImages[thumbnail]()).default;
+
+  socialImage = await getImage({
+    src: imgObj,
+    width: 1200,
+    height: 630,
+    format: "png",
+  });
+}
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/favicon/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/favicon/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/favicon/favicon-16x16.png"
+/>
+<link rel="manifest" href="/favicon/site.webmanifest" />
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#023fbb" />
+<meta name="msapplication-TileColor" content="#ffc40d" />
+<meta name="theme-color" content="#ff0000" />
+
+<meta name="generator" content={Astro.generator} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{pageTitle}</title>
+<meta name="title" content={pageTitle} />
+<meta name="description" content={description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+{socialImage && <meta property="og:image" content={socialImage.src} />}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+{socialImage && <meta property="twitter:image" content={socialImage} />}
+<script is:inline>
+  const setDarkMode = () => {
+    if (localStorage.getItem("color-scheme") === "dark") {
+      document.querySelector("html").dataset.theme = "dark";
+    }
+    if (localStorage.getItem("color-scheme") === "light") {
+      document.querySelector("html").dataset.theme = "light";
+    }
+    if (!localStorage.getItem("color-scheme")) {
+      let theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+      localStorage.setItem("color-scheme", theme);
+    }
+  };
+  setDarkMode();
+  document.addEventListener("astro:after-swap", setDarkMode);
+</script>
+<ViewTransitions fallback="swap" />
+<script src="/scroll-timeline.js" is:inline async></script>
