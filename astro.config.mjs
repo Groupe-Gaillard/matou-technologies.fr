@@ -27,7 +27,8 @@ const m2dxOptions = {
 export default defineConfig({
   site: "https://www.matou-technologies.fr",
   output: "hybrid",
-  adapter: env.NETLIFY ? netlify() : vercel(), // vercel() or netlify()
+  adapter: vercel(),
+  outDir: "./dist",
   integrations: [
     icon(),
     mdx({}),
