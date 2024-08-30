@@ -54,14 +54,14 @@ body {
 /* SURFACES */
 
 .surface-base {
-  @apply bg-light text-dark dark:bg-dark dark:text-light;
+  @apply bg-light text-dark;
   .shape-fill {
-    @apply fill-light dark:fill-dark;
+    @apply fill-light;
   }
 }
 
 .surface-primary {
-  @apply bg-primary text-white dark:text-white;
+  @apply bg-primary text-white;
   a:not([class]) {
     @apply text-light;
   }
@@ -92,11 +92,11 @@ body {
   }
 }
 .surface-overlay {
-  @apply bg-white text-dark dark:bg-black dark:text-light;
+  @apply bg-white text-dark;
 }
 
 .surface-dark {
-  @apply bg-dark text-light dark:bg-black;
+  @apply bg-dark text-light;
 }
 
 .bg-dark-blur {
@@ -104,7 +104,7 @@ body {
 }
 
 .surface-footer {
-  @apply bg-dark bg-opacity-80 text-light dark:bg-black;
+  @apply bg-dark bg-opacity-80 text-light;
 }
 
 .surface-light {
@@ -124,28 +124,28 @@ body {
 }
 
 .surface-matou-primary-dark01 {
-  @apply bg-matouPrimaryDark01 text-white dark:text-white;
+  @apply bg-matouPrimaryDark01 text-white;
   a:not([class]) {
     @apply text-light;
   }
 }
 
 .surface-matou-primary-light01 {
-  @apply bg-matouPrimaryLight01 text-black dark:text-black;
+  @apply bg-matouPrimaryLight01 text-black;
   a:not([class]) {
     @apply text-light;
   }
 }
 
 .surface-matou-primary-light02 {
-  @apply bg-matouPrimaryLight02 text-black dark:text-black;
+  @apply bg-matouPrimaryLight02 text-black;
   a:not([class]) {
     @apply text-light;
   }
 }
 
 .surface-matou-secondary-light01 {
-  @apply bg-matouSecondaryLight01 text-black dark:text-black;
+  @apply bg-matouSecondaryLight01 text-black;
   a:not([class]) {
     @apply text-light;
   }
@@ -531,16 +531,16 @@ body {
 /* NAVIGATION */
 
 .nav {
-  @apply bg-light bg-opacity-0 text-dark dark:bg-dark dark:bg-opacity-0 dark:text-white;
+  @apply bg-light bg-opacity-0 text-dark;
 
   &-light {
     @apply text-light dark:text-light;
   }
   &-dark {
-    @apply text-dark dark:text-dark;
+    @apply text-dark;
   }
   &-inverse {
-    @apply bg-dark bg-opacity-0 text-light dark:bg-light dark:bg-opacity-0 dark:text-dark;
+    @apply bg-dark bg-opacity-0 text-light;
   }
 }
 
