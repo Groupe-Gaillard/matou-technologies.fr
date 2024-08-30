@@ -26,8 +26,6 @@ const m2dxOptions = {
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.matou-technologies.fr",
-  output: "hybrid",
-  adapter: vercel(),
   outDir: "./dist",
   integrations: [
     icon(),
