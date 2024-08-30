@@ -1,10 +1,13 @@
 ---
 import { marked } from "marked";
 import Button from "@components/navigation/Button.astro";
-const { content, style, buttons } = Astro.props;
+import { slugify } from "@util/helpers";
+const { content, style, buttons, title } = Astro.props;
+const id = title ? slugify(title) : "multi-cards";
 ---
 
 <div
+  {id}
   class={`container-${style?.container || "md"}  `}
   style="--animation-delay: 0.4s"
 >
