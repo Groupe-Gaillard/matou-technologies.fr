@@ -1,155 +1,129 @@
-# Creative Commons Attribution-NoDerivatives 4.0 International
+# EULA (End User License Agreement)
 
-Creative Commons Corporation ("Creative Commons") is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an "as-is" basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.
+## Personal License
 
-**Using Creative Commons Public Licenses**
+Web3Templates grants you an on-going, non-exclusive license to use this Template.
 
-Creative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.
+The license grants permission to **one individual** (the Licensee) to access and use this Template.
 
--   **Considerations for licensors:** Our public licenses are intended for use by those authorized to give the public permission to use material in ways otherwise restricted by copyright and certain other rights. Our licenses are irrevocable. Licensors should read and understand the terms and conditions of the license they choose before applying it. Licensors should also secure all rights necessary before applying our licenses so that the public can reuse the material as expected. Licensors should clearly mark any material not subject to the license. This includes other CC-licensed material, or material used under an exception or limitation to copyright. [More considerations for licensors](http://wiki.creativecommons.org/Considerations_for_licensors_and_licensees#Considerations_for_licensors).
+You **can**:
 
--   **Considerations for the public:** By using one of our public licenses, a licensor grants the public permission to use the licensed material under specified terms and conditions. If the licensor's permission is not necessary for any reason--for example, because of any applicable exception or limitation to copyright--then that use is not regulated by the license. Our licenses grant only permissions under copyright and certain other rights that a licensor has authority to grant. Use of the licensed material may still be restricted for other reasons, including because others have copyright or other rights in the material. A licensor may make special requests, such as asking that all changes be marked or described. Although not required by our licenses, you are encouraged to respect those requests where reasonable. [More considerations for the public](http://wiki.creativecommons.org/Considerations_for_licensors_and_licensees#Considerations_for_licensees).
+- Use this Template to create unlimited End Products.
+- Modify this Template to create derivative components and templates. Those components and templates are subject to this license.
+- Use this Template to create unlimited End Products for unlimited Clients.
+- Use this Template to create End Products where the End Product is sold to End Users.
+- Use this Template to create End Products that are open source and freely available to End Users.
 
-## Creative Commons Attribution-NoDerivatives 4.0 International Public License
+You **cannot**:
 
-By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NoDerivatives 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+- Use this Template to create End Products that are designed to allow an End User to build their own End Products using this Template or derivatives of this Template.
+- Re-distribute this Template or derivatives of this Template separately from an End Product, neither in code or as design assets.
+- Share your access to this Template with any other individuals.
+- Use this Template to produce anything that may be deemed by Web3Templates, in their sole and absolute discretion, to be competitive or in conflict with the business of Web3Templates.
 
-### Section 1 -- Definitions.
+### Example usage
 
-a. **Adapted Material** means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
+Examples of usage **allowed** by the license:
 
-b. **Copyright and Similar Rights** means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.
+- Creating a personal website by yourself.
+- Creating a website or web application for a client that will be owned by that client.
+- Creating a commercial SaaS application (like an invoicing app for example) where end users have to pay a fee to use the application.
+- Creating a commercial self-hosted web application that is sold to end users for a one-time fee.
+- Creating a web application where the primary purpose is clearly not to simply re-distribute the template that is free and open source, where the source code is publicly available.
 
-c. **Effective Technological Measures** means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
+Examples of usage **not allowed** by the license:
 
-d. **Exceptions and Limitations** means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
+- Creating a repository of your favorite Web3Templates components or templates (or derivatives based on Web3Templates components or templates) and publishing it publicly.
+- Creating a React or Vue version of Web3Templates and making it available either for sale or for free.
+- Create a Figma or Sketch UI kit based on the Web3Templates component designs.
+- Creating a "website builder" project where end users can build their own websites using components or templates included with or derived from Web3Templates.
+- Creating a theme, template, or project starter kit using the components or templates and making it available either for sale or for free.
+- Creating an admin panel tool that is made available either for sale or for free.
 
-e. **Licensed Material** means the artistic or literary work, database, or other material to which the Licensor applied this Public License. Please note that this definition excludes images, icons, and all content specifically intended for use on the demonstration website.
+In simple terms, use Web3Templates for anything you like as long as it doesn't compete with Web3Templates.
 
-f. **Licensed Rights** means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.
+### Personal License Definitions
 
-g. **Licensor** means the individual(s) or entity(ies) granting rights under this Public License.
+Licensee is the individual who has purchased a Personal License.
 
-h. **Share** means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.
+Components and Templates are the source code and design assets made available to the Licensee after purchasing a Web3Templates license.
 
-i. **Sui Generis Database Rights** means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.
+End Product is any artifact produced that incorporates the Components or Templates or derivatives of the Components or Templates.
 
-j. **You** means the individual or entity exercising the Licensed Rights under this Public License. **Your** has a corresponding meaning.
+End User is a user of an End Product.
 
-### Section 2 -- Scope.
+Client is an individual or entity receiving custom professional services directly from the Licensee, produced specifically for that individual or entity. Customers of software-as-a-service products are not considered clients for the purpose of this document.
 
-a. **_License grant._**
+## Team License
 
-1.  Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
+Web3Templates grants you an on-going, non-exclusive license to use this Template.
 
-     A. reproduce and Share the Licensed Material, in whole or in part; and
+The license grants permission for **up to 25 Employees and Contractors of the Licensee** to access and use this Template.
 
-     B. produce and reproduce, but not Share, Adapted Material.
+You **can**:
 
-2.  **Exceptions and Limitations.** For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.
+- Use this Template to create unlimited End Products.
+- Modify this Template to create derivative components and templates. Those components and templates are subject to this license.
+- Use this Template to create unlimited End Products for unlimited Clients.
+- Use this Template to create End Products where the End Product is sold to End Users.
+- Use this Template to create End Products that are open source and freely available to End Users.
 
-3.  **Term.** The term of this Public License is specified in Section 6(a).
+You **cannot**:
 
-4.  **Media and formats; technical modifications allowed.** The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.
+- Use the Components or Templates to create End Products that are designed to allow an End User to build their own End Products using the Components or Templates or derivatives of the Components or Templates.
+- Re-distribute the Components or Templates or derivatives of the Components or Templates separately from an End Product.
+- Use the Components or Templates to create End Products that are the property of any individual or entity other than the Licensee or Clients of the Licensee.
+- Use the Components or Templates to produce anything that may be deemed by Web3Templates, in their sole and absolute discretion, to be competitive or in conflict with the business of Web3Templates.
 
-5.  **Downstream recipients.**
+### Example usage
 
-     A. **Offer from the Licensor -- Licensed Material.** Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.
+Examples of usage **allowed** by the license:
 
-     B. **No downstream restrictions.** You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
+- Creating a website for your company
+- Creating a website or web application for a client that will be owned by that client
+- Creating a commercial SaaS application (like an invoicing app for example) where end users have to pay a fee to use the application
+- Creating a commercial self-hosted web application that is sold to end users for a one-time fee
+- Creating a web application where the primary purpose is clearly not to simply re-distribute the components or templates (like a conference organization app that uses the components or a template for its UI for example) that is free and open source, where the source code is publicly available
 
-6.  **No endorsement.** Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
+Examples of use **not allowed** by the license:
 
-b. **_Other rights._**
+- Creating a repository of your favorite Web3Templates components or template (or derivatives based on Web3Templates components or templates) and publishing it publicly
+- Creating a React or Vue version of Web3Templates and making it available either for sale or for free
+- Creating a "website builder" project where end users can build their own websites using components or templates included with or derived from Web3Templates
+- Creating a theme or template using the components or templates and making it available either for sale or for free
+- Creating an admin panel tool that is made available either for sale or for free
+- Creating any End Product that is not the sole property of either your company or a client of your company. For example your employees/contractors can't use your company Web3Templates license to build their own websites or side projects.
 
-1.  Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
+### Team License Definitions
 
-2.  Patent and trademark rights are not licensed under this Public License.
+Licensee is the business entity who has purchased a Team License.
 
-3.  To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.
+Components and Templates are the source code and design assets made available to the Licensee after purchasing a Web3Templates license.
 
-### Section 3 -- License Conditions.
+End Product is any artifact produced that incorporates the Components or Templates or derivatives of the Components or Templates.
 
-Your exercise of the Licensed Rights is expressly made subject to the following conditions.
+End User is a user of an End Product.
 
-a. **_Attribution._**
+Employee is a full-time or part-time employee of the Licensee.
 
-1.  If You Share the Licensed Material, You must:
+Contractor is an individual or business entity contracted to perform services for the Licensee.
 
-     A. retain the following if it is supplied by the Licensor with the Licensed Material:
+Client is an individual or entity receiving custom professional services directly from the Licensee, produced specifically for that individual or entity. Customers of software-as-a-service products are not considered clients for the purpose of this document.
 
-       i. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
+## Enforcement
 
-       ii. a copyright notice;
+If you are found to be in violation of the license, access to your Web3Templates account will be terminated, and a refund may be issued at our discretion. When license violation is blatant and malicious (such as intentionally redistributing the Components or Templates through private warez channels), no refund will be issued.
 
-       iii. a notice that refers to this Public License;
+The copyright of this Template is owned by You are granted only the permissions described in this license; all other rights are reserved. reserves the right to pursue legal remedies for any unauthorized use of the Components or Templates outside the scope of this license.
 
-       iv. a notice that refers to the disclaimer of warranties;
+## Liability
 
-       v. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
+Web3Templates.’s liability to you for costs, damages, or other losses arising from your use of the Components or Templates — including third-party claims against you — is limited to a refund of your license fee. may not be held liable for any consequential damages related to your use of the Components or Templates.
 
-     B. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
+This Agreement is governed by the laws of the Province of Ontario and the applicable laws of Canada. Legal proceedings related to this Agreement may only be brought in the courts of Ontario. You agree to service of process at the e-mail address on your original order.
 
-     C. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
+## Questions?
 
-     For the avoidance of doubt, You do not have permission under this Public License to Share Adapted Material.
+Unsure which license you need, or unsure if your use case is covered by our licenses?
 
-2.  You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
-
-3.  If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.
-
-### Section 4 -- Sui Generis Database Rights.
-
-Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
-
-a. for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database, provided You do not Share Adapted Material;
-
-b. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and
-
-c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
-
-For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
-
-### Section 5 -- Disclaimer of Warranties and Limitation of Liability.
-
-a. **Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.**
-
-b. **To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.**
-
-c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
-
-### Section 6 -- Term and Termination.
-
-a. This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.
-
-b. Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:
-
-1.  automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or
-
-2.  upon express reinstatement by the Licensor.
-
-    For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.
-
-c. For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
-
-d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
-
-### Section 7 -- Other Terms and Conditions.
-
-a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.
-
-b. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.
-
-### Section 8 -- Interpretation.
-
-a. For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.
-
-b. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.
-
-c. No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
-
-d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
-
-> Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the "Licensor." Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at [creativecommons.org/policies](http://creativecommons.org/policies), Creative Commons does not authorize the use of the trademark "Creative Commons" or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.
->
-> Creative Commons may be contacted at creativecommons.org
+Email us at [hello@web3templates.com](mailto:hello@web3templates.com) with your questions.

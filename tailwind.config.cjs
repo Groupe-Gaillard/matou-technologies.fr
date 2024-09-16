@@ -1,56 +1,29 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require("tailwindcss/plugin");
-
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      colors: {
-        primary: "rgb(var(--color-primary) / <alpha-value>)",
-        secondary: "rgb(var(--color-secondary) / <alpha-value>)",
-        accent: "rgb(var(--color-accent) / <alpha-value>)",
-        warning: "rgb(var(--color-warning) / <alpha-value>)",
-        danger: "rgb(var(--color-danger) / <alpha-value>)",
-        success: "rgb(var(--color-success) / <alpha-value>)",
-        light: "rgb(var(--color-light) / <alpha-value>)",
-        dark: "rgb(var(--color-dark) / <alpha-value>)",
-        info: "rgb(var(--color-info) / <alpha-value>)",
-        matouPrimary: "#023FBB",
-        matouPrimaryDark01: "#023373",
-        matouPrimaryLight01: "#636AF2",
-        matouPrimaryLight02: "#BEF0FA",
-        matouSecondary: "#F28705",
-        matouSecondaryLight01: "#FFC000",
-        matouSecondaryLight02: "#FFA03A",
-      },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        sans: ["Inter Variable", "Inter", ...defaultTheme.fontFamily.sans],
       },
-      fontSize: {
-        thin: 300,
-        regular: 400,
-        bold: 700,
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
-      boxShadow: {
-        inset: " inset 2px 2px 40px -20px rgba(0, 0, 0, 0.3)",
-        "inset-s": " inset 2px 2px 30px -10px rgba(0, 0, 0, 0.4)",
+      animation: {
+        marquee: "marquee 50s linear infinite",
       },
-      screens: {
-        xs: "500px",
-      },
-      aspectRatio: {
-        "5/4": "5 / 4",
-        "4/5": "4 / 5",
-        "9/16": "9 / 16",
+      keyframes: {
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(calc(-100% - 2.5rem))",
+          },
+        },
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/container-queries"),
-    plugin(function ({ addBase }) {
-      addBase({
-        html: { fontSize: "16px" },
-      });
-    }),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };
