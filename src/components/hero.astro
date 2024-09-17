@@ -1,11 +1,11 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "../assets/hero-screenshot.png";
+import heroImage from "../assets/robot.jpg";
 import Link from "@components/ui/link.astro";
 import Container from "@components/container.astro";
 ---
 
-<div class="overflow-x-clip">
+<div class="overflow-x-clip my-40">
   <Container>
     <main class="grid lg:grid-cols-5 place-items-center relative">
       <div
@@ -17,33 +17,12 @@ import Container from "@components/container.astro";
 
       <div class="max-w-sm md:max-w-max lg:col-span-2">
         <h1
-          class="text-3xl lg:text-4xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-start">
-          Create websites with Astroship™
+          class="text-3xl lg:text-4xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-start text-matouSecondary">
+          Nous sommes les Matous.<br />
+          <span class="font-bold text-matouPrimaryDark01"
+            >Agence Technologique.</span
+          >
         </h1>
-        <p
-          class="text-lg mt-4 max-w-lg text-slate-600 [text-wrap:balance] text-center lg:text-start">
-          Pro version of popular Astroship starter template made for startups.
-          Built with Astro and Tailwind CSS.
-        </p>
-        <div
-          class="mt-6 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3">
-          <Link
-            href="https://web3templates.com/templates/astroship-pro-astro-saas-website-template"
-            target="_blank"
-            class="flex gap-1 items-center justify-center"
-            rel="noopener">
-            Buy Template — $49
-          </Link>
-          <Link
-            size="lg"
-            style="outline"
-            rel="noopener"
-            href="https://github.com/surjithctly/astroship"
-            class="flex gap-1 items-center justify-center"
-            target="_blank">
-            Free Version
-          </Link>
-        </div>
       </div>
       <div class="py-3 lg:col-span-3 lg:-mr-44">
         <Picture
@@ -54,6 +33,7 @@ import Container from "@components/container.astro";
           widths={[240, 540, 720, heroImage.width]}
           loading="eager"
           fetchpriority="high"
+          class="rounded-lg shadow-lg"
         />
       </div>
     </main>
