@@ -7,6 +7,7 @@ import "@fontsource-variable/inter/index.css";
 
 interface Props {
   title?: string;
+  description?: string;
   footerMargin?: boolean;
 }
 
@@ -17,9 +18,10 @@ const resolvedImageWithDomain = new URL(
   Astro.site
 ).toString();
 
-const { title, footerMargin = true } = Astro.props;
+const { title, description, footerMargin = true } = Astro.props;
 
 const makeTitle = title;
+const makeDescription = description;
 ---
 
 <!doctype html>
@@ -27,6 +29,7 @@ const makeTitle = title;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <link
@@ -60,7 +63,7 @@ const makeTitle = title;
 
     <SEO
       title={makeTitle}
-      description="Astroship Pro - SAAS & Startup Website Template for Astro built with TailwindCSS."
+      description={makeDescription}
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -71,11 +74,11 @@ const makeTitle = title;
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship Pro - SAAS &Startup Website Template for Astro`,
+          title: makeTitle ?? "Matou Technologies",
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Matou Technologies",
         },
       }}
     />
