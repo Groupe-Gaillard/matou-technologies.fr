@@ -11,7 +11,7 @@ const { frontmatter } = Astro.props;
     <Sectionhead>
       <Fragment slot="title">{frontmatter.title}</Fragment>
       <Fragment slot="desc">
-        Last updated on {frontmatter.date}
+        Dernière mise à jour le {frontmatter.date}
       </Fragment>
     </Sectionhead>
 
@@ -20,3 +20,11 @@ const { frontmatter } = Astro.props;
     </div>
   </Container>
 </Layout>
+
+<style>
+  .prose {
+    a {
+      @apply hover:text-matouPrimary;
+    }
+  }
+</style>
