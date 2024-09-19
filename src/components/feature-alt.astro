@@ -1,10 +1,30 @@
 ---
 import Badge from "@components/ui/badge.astro";
 import { Picture } from "astro:assets";
-import FeatureImg1 from "../assets/cat-tie-blue-background.jpg";
-import FeatureImg2 from "../assets/cat-tie-red-background.jpg";
-import { Icon } from "astro-icon/components";
-import Link from "@components/ui/link.astro";
+import FeatureImg1 from "../assets/features/6.png";
+
+const valors = [
+  {
+    title: "Rester joueur",
+    description:
+      "Créativité et recherche constante de nouvelles solutions pour répondre aux défis technologiques.",
+  },
+  {
+    title: "Montrer patte blanche",
+    description:
+      "Nous agissons de manière éthique et honnête dans nos interactions.",
+  },
+  {
+    title: "Entretenir l'excellence",
+    description:
+      "Des services de haute qualité pour dépasser les attentes de nos clients.",
+  },
+  {
+    title: "S'adapter",
+    description:
+      "Nous sommes flexibles : nous nous adaptons aux changements pour rester pertinents dans un environnement technologique en évolution constante.",
+  },
+];
 ---
 
 <div class="grid md:grid-cols-2 py-10">
@@ -43,7 +63,29 @@ import Link from "@components/ui/link.astro";
   </div>
 </div>
 
-<div class="grid md:grid-cols-2 py-10">
+<div class="richtext fade-up" data-astro-cid-ownacw7g="">
+  <h3
+    class="text-2xl lg:text-3xl xl:text-5xl font-bold mt-4 [text-wrap:balance]">
+    Nos Valeurs
+  </h3>
+  <p class="mt-4 [text-wrap:balance] text-xl lg:text-2xl xl:text-4xl font-bold">
+    Nous caressons l'idée d'une relation client basée sur <span
+      style="color: #F28705"
+      >des valeurs fortes issues de la personnalité des Matous</span
+    >.
+  </p>
+</div>
+<div class="grid sm:grid-cols-2 md:grid-cols-4 mt-16 gap-8 md:gap-16">
+  {
+    valors.map((item) => (
+      <div class="flex flex-col gap-4 items-start group hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg transition-all md:-m-5 p-5">
+        <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+        <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+      </div>
+    ))
+  }
+</div>
+<!-- <div class="grid md:grid-cols-2 py-10">
   <div class="grid place-items-center pb-10 md:pb-0 md:order-2">
     <Picture
       src={FeatureImg2}
@@ -103,4 +145,4 @@ import Link from "@components/ui/link.astro";
       </ul>
     </div>
   </div>
-</div>
+</div> -->
