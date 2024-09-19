@@ -11,4 +11,13 @@ export default defineConfig({
     domains: ["unsplash.com", "images.unsplash.com"],
   },
   integrations: [tailwind(), mdx(), icon(), sitemap()],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        css: {
+          additionalData: `@import "./src/styles/global.css";`,
+        },
+      },
+    },
+  },
 });
