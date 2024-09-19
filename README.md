@@ -1,6 +1,6 @@
 # Matou technologies
 
-Matou is a website based on [Astro](https://astro.build/) and [Starfunnel](https://starfunnel.unfolding.io/) theme.
+Matou is a website based on [Astro](https://astro.build/) and [Astroship Pro](https://astroship-pro.web3templates.com/) theme.
 
 We used royalty free image and AI generated images [unsplash](https://unsplash.com/fr) et [freepik](https://fr.freepik.com/).
 
