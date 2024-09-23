@@ -7,51 +7,17 @@ import FeatureImgTwo from "../assets/features/2.png";
 import FeatureImgThree from "../assets/features/3.png";
 ---
 
-<div class="mt-24">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to <span class="text-indigo-600">start a website</span>
+<div class="mt-24 font-bold">
+  <h2 class="text-2xl lg:text-3xl xl:text-5xl mt-4 [text-wrap:balance]">
+    Notre expertise
   </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
-  </p>
-</div>
-
-<div class="grid md:grid-cols-2 lg:grid-cols-5 mt-16 gap-10">
-  <Card class="lg:col-span-3" color="purple">
-    <Fragment slot="image">
-      <Picture
-        src={FeatureImgOne}
-        alt="Feature image"
-        formats={["avif", "webp"]}
-        class="h-full w-full object-contain"
-        loading="lazy"
-      />
-    </Fragment>
-    <span slot="badge">Astroship</span>
-    <span slot="title">Responsive Template</span>
-    <span slot="desc">
-      Astroship is a creative and modern mobile responsive website template that
-      helps you create any kind of marketing websites or landing pages.
-    </span>
-  </Card>
-  <Card class="lg:col-span-2" color="indigo">
-    <Fragment slot="image">
-      <Picture
-        src={FeatureImgTwo}
-        alt="Feature image"
-        formats={["avif", "webp"]}
-        class="h-full w-full object-contain"
-        loading="lazy"
-      />
-    </Fragment>
-    <span slot="badge">Creative</span>
-    <span slot="title">Next Level Template</span>
-    <span slot="desc">
-      Astroship is a new kind of website template that integrates your favorite
-      tools and workflows.</span
+  <p class="mt-4 [text-wrap:balance] text-xl lg:text-2xl xl:text-4xl font-bold">
+    L’équipe des Matous met à disposition de ses clients <span
+      class="text-matouSecondary"
+      >un savoir-faire et une expertise aiguisée</span
     >
-  </Card>
+    .
+  </p>
 </div>
 
 <div class="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
@@ -65,11 +31,11 @@ import FeatureImgThree from "../assets/features/3.png";
         loading="lazy"
       />
     </Fragment>
-    <span slot="badge">Template</span>
-    <span slot="title">Modern Design</span>
+    <span slot="title">Développement web</span>
     <span slot="desc">
-      Feeling old? Try this template and be a part of the modern design.</span
-    >
+      Des logiciels, sites web, sur mesure pour améliorer les process internes,
+      lancer une nouvelle application ou automatiser des tâches.
+    </span>
   </Card>
 
   <Card color="purple" size="sm">
@@ -82,11 +48,11 @@ import FeatureImgThree from "../assets/features/3.png";
         loading="lazy"
       />
     </Fragment>
-    <span slot="badge">Product</span>
-    <span slot="title">Highlight Features</span>
+    <span slot="title">Data analyse </span>
     <span slot="desc">
-      You can highlight your features in a trendy grid like this one.</span
-    >
+      Exploiter le pouvoir de l’analyse de données pour en tirer des insights
+      précieux, des décisions éclairées et améliorer sa performance.
+    </span>
   </Card>
 
   <Card size="sm">
@@ -101,10 +67,66 @@ import FeatureImgThree from "../assets/features/3.png";
         loading="lazy"
       />
     </Fragment>
-    <span slot="badge">Webhooks</span>
-    <span slot="title">100+ Integrations</span>
+    <span slot="title">Infrastructure et réseau </span>
     <span slot="desc">
-      Astroship can be integrated with hundreds of tools using Zapier.</span
-    >
+      Vous accompagner dans votre transition numérique avec des services de
+      migration, de déploiement et de gestion d’infrastructure serveur et
+      réseau.
+    </span>
+  </Card>
+
+  <Card color="purple" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={FeatureImgTwo}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="title">Stratégie d’organisation IT </span>
+    <span slot="desc">
+      Définir des plans stratégiques personnalisés et recommandations
+      pragmatiques. Mettre en oeuvre des solutions en soutien de vos objectifs
+      business et rester compétitifs.
+    </span>
+  </Card>
+
+  <Card color="purple" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={FeatureImgTwo}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="title">Maintenance, support & formation </span>
+    <span slot="desc">
+      Assurer un fonctionnement continu de vos systèmes informatiques.
+      Accompagner vos équipes dans la prise en main des technologies utilisées
+      pour gagner en efficacité et autonomie.
+    </span>
+  </Card>
+
+  <Card color="purple" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={FeatureImgTwo}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+
+    <span slot="title">Sécurité informatique </span>
+    <span slot="desc">
+      Des services de sécurité pour protéger votre entreprise contre les
+      cybermenaces, assurer la confidentialité de vos informations sensibles et
+      garantir la continuité de vos opérations.
+    </span>
   </Card>
 </div>
