@@ -5,11 +5,21 @@ import { Icon } from "astro-icon/components";
 const { margin } = Astro.props;
 
 const footermenu = {
-  info: [
+  company: [
     {
       title: "Accueil",
       path: "/",
     },
+    {
+      title: "Recrutement",
+      path: "/recrutement",
+    },
+    {
+      title: "Contact",
+      path: "/contact",
+    },
+  ],
+  info: [
     {
       title: "Politique de confidentialité",
       path: "/politique-de-confidentialite",
@@ -17,10 +27,6 @@ const footermenu = {
     {
       title: "Mentions légales",
       path: "/mentions-legales",
-    },
-    {
-      title: "Recrutement",
-      path: "/recrutement",
     },
   ],
 };
@@ -33,7 +39,7 @@ const footermenu = {
   ]}>
   <Container>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <div class="sm:col-span-2">
+      <div class="sm:col-span-2 md:col-span-1">
         <a href="/" class="text-lg inline-block">
           <Icon name="logo-matou" class="h-20 w-40" />
         </a>
@@ -50,7 +56,23 @@ const footermenu = {
         </div>
       </div>
       <div>
-        <h3 class="font-medium text-sm text-slate-800">Info</h3>
+        <h3 class="font-medium text-sm text-slate-800">
+          A propos de Matou Technologies
+        </h3>
+        <div class="flex flex-col mt-3">
+          {
+            footermenu.company.map((item) => (
+              <a
+                href={item.path || "#"}
+                class="py-2 text-sm text-slate-600 hover:text-matouPrimary">
+                {item.title}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+      <div>
+        <h3 class="font-medium text-sm text-slate-800">Informations légales</h3>
         <div class="flex flex-col mt-3">
           {
             footermenu.info.map((item) => (

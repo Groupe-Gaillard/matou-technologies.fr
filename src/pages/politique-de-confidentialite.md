@@ -27,7 +27,7 @@ Si nous vous demandons de nous fournir vos renseignements personnels pour une au
 
 ### Comment puis-je retirer mon consentement?
 
-Si après nous avoir donné votre consentement, vous changez d’avis et ne consentez plus à ce que nous puissions vous contacter, recueillir vos renseignements ou les divulguer, vous pouvez nous en aviser en nous contactant à contact@matou-technologies.fr ou par courrier à: Matou Technologies, 425 avenue Victoire - Z.I de Rousset, 13106 ROUSSET.
+Si après nous avoir donné votre consentement, vous changez d’avis et ne consentez plus à ce que nous puissions vous contacter, recueillir vos renseignements ou les divulguer, vous pouvez nous en aviser en nous contactant via le formulaire se trouvant sur la page <a href="/contact">contact</a> ou par courrier à: Matou Technologies, 425 avenue Victoire - Z.I de Rousset, 13106 ROUSSET.
 
 ## Article 3 - Conservation des données personnelles
 
