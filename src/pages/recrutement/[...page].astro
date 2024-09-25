@@ -13,7 +13,7 @@ export async function getStaticPaths({
   paginate: PaginateFunction;
 }) {
   const PAGE_SIZE = 6;
-  const allPosts = await getCollection("recrutement", ({ data }) => {
+  const allPosts = await getCollection("recruitment", ({ data }) => {
     return !data.draft && data.publishDate < new Date();
   });
 

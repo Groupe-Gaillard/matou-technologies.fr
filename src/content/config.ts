@@ -1,6 +1,6 @@
 import { z, defineCollection } from "astro:content";
 
-const recrutementCollection = defineCollection({
+const recruitmentCollection = defineCollection({
   schema: z.object({
     draft: z.boolean(),
     title: z.string(),
@@ -30,6 +30,6 @@ const teamCollection = defineCollection({
 });
 
 export const collections = {
-  recrutement: recrutementCollection,
+  recruitment: recruitmentCollection,
   team: teamCollection,
 };

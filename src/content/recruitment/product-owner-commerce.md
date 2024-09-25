@@ -4,7 +4,7 @@ title: "Product Owner Spécialisé en commerce"
 snippet: "Product Owner Spécialisé en commerce"
 image:
   {
-    src: "https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?fit=crop&w=600&h=335",
+    src: "/src/assets/recruitment/product-owner.jpeg",
     alt: "Product Owner Spécialisé en commerce",
   }
 publishDate: "2024-09-23 09:00"

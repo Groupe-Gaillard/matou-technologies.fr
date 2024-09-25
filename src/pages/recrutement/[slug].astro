@@ -5,8 +5,8 @@ import Container from "@components/container.astro";
 import { Picture } from "astro:assets";
 
 export async function getStaticPaths() {
-  const recrutementEntries = await getCollection("recrutement");
-  return recrutementEntries.map((entry) => ({
+  const recruitmentEntries = await getCollection("recruitment");
+  return recruitmentEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
