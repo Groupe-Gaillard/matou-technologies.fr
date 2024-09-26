@@ -2,11 +2,7 @@
 draft: false
 title: "Data Analyst"
 snippet: "Data Analyst"
-image:
-  {
-    src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?fit=crop&w=600&h=335",
-    alt: "Data Analyst",
-  }
+image: { src: "/src/assets/recruitment/data-analyst.jpeg", alt: "Data Analyst" }
 publishDate: "2024-09-23 10:00"
 category: "Data Analyst"
 author: "Matou"
