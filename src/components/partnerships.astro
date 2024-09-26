@@ -1,0 +1,44 @@
+---
+import { Picture } from "astro:assets";
+import heroImage from "../assets/hero-screenshot.png";
+import Container from "@components/container.astro";
+---
+
+<div class="overflow-x-clip my-40">
+  <Container>
+    <main class="grid lg:grid-cols-5 place-items-center relative">
+      <div
+        class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-indigo-200 right-0 top-0">
+      </div>
+      <div
+        class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-purple-200 right-56 top-10">
+      </div>
+
+      <div class="max-w-sm md:max-w-max lg:col-span-2">
+        <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4">
+          Nos partenariats industriels
+        </h1>
+        <p
+          class="mt-4 [text-wrap:balance] text-xl lg:text-2xl xl:text-4xl font-bold">
+          Pour vous faire ronronner plus encore, l’approche des Matous consiste
+          à <span class="text-matouSecondary"
+            >combiner une expertise aiguisée des équipes à celle de partenaires
+            stratégiques</span
+          >.
+        </p>
+      </div>
+      <div class="py-3 lg:col-span-3 lg:-mr-44 max-w-md">
+        <Picture
+          src={heroImage}
+          alt="Astronaut in the air"
+          formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, heroImage.width]}
+          loading="eager"
+          fetchpriority="high"
+          class="rounded-lg shadow-lg"
+        />
+      </div>
+    </main>
+  </Container>
+</div>
