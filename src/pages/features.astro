@@ -1,17 +1,17 @@
 ---
 import Container from "@components/container.astro";
 import Cta from "@components/cta.astro";
-import FeatureAlt from "@components/feature-alt.astro";
-import FeatureGrid from "@components/feature-grid.astro";
-import { default as FeaturesBlock } from "@components/features.astro";
+import Mission from "@components/mission.astro";
+import Expertise from "@components/expertise.astro";
+import { default as Technologies } from "@components/technologies.astro";
 import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout footerMargin={false}>
   <Container class="mt-16">
-    <FeatureAlt nomargin={true} />
-    <FeatureGrid />
-    <FeaturesBlock />
+    <Mission nomargin={true} />
+    <Expertise />
+    <Technologies />
   </Container>
   <Cta />
 </Layout>
