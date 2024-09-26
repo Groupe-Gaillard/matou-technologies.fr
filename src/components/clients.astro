@@ -1,0 +1,134 @@
+---
+import { Picture } from "astro:assets";
+import GroupeGaillard from "@assets/clients/groupe-gaillard.png";
+import EnergieMedical from "@assets/clients/energie-medical.png";
+import Paramat from "@assets/clients/paramat.png";
+import NewPlanetMedia from "@assets/clients/new-planet-media.png";
+import Planet from "@assets/clients/planet.png";
+import ESante from "@assets/clients/e-sante.png";
+import Medisite from "@assets/clients/medisite.png";
+---
+
+<div>
+  <h2
+    class="text-xl lg:text-2xl xl:text-4xl font-bold text-center text-slate-500">
+    Ils nous ont fait confiance et <span class="text-matouSecondary"
+      >patounent avec nous</span
+    >
+  </h2>
+  <div
+    class="flex gap-x-8 gap-y-4 md:gap-20 lg:gap-28 items-center justify-center mt-6 flex-wrap">
+    <div class="text-gray-500 my-2 h-7 md:h-9">
+      <a
+        href="https://www.groupegaillard.fr/"
+        class="grayscale hover:grayscale-0">
+        <Picture
+          src={GroupeGaillard}
+          alt="Groupe Gaillard"
+          formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, GroupeGaillard.width]}
+          loading="eager"
+          fetchpriority="high"
+          class=""
+        />
+      </a>
+    </div>
+
+    <div class="text-gray-500 my-2 h-7 md:h-9">
+      <a
+        href="https://www.energie-medical.fr/"
+        class="grayscale hover:grayscale-0">
+        <Picture
+          src={EnergieMedical}
+          alt="Energie médical"
+          formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, EnergieMedical.width]}
+          loading="eager"
+          fetchpriority="high"
+          class=""
+        />
+      </a>
+    </div>
+
+    <div class="text-gray-500 my-2 h-7 md:h-9">
+      <a href="https://www.paramat.com/" class="grayscale hover:grayscale-0">
+        <Picture
+          src={Paramat}
+          alt="Paramat"
+          formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, Paramat.width]}
+          loading="eager"
+          fetchpriority="high"
+          class=""
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    class="flex gap-x-8 gap-y-4 md:gap-20 lg:gap-28 items-center justify-center mt-6 flex-wrap">
+    <div class="text-gray-500 my-2 h-7 md:h-9">
+      <a
+        href="https://www.new-planet-media.fr/"
+        class="grayscale hover:grayscale-0">
+        <Picture
+          src={NewPlanetMedia}
+          alt="New Planet Media"
+          formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, NewPlanetMedia.width]}
+          loading="eager"
+          fetchpriority="high"
+          class=""
+        />
+      </a>
+    </div>
+
+    <div class="text-gray-500 my-2 h-7 md:h-9">
+      <a href="https://www.planet.fr/" class="grayscale hover:grayscale-0">
+        <Picture
+          src={Planet}
+          alt="Planet.fr"
+          formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, Planet.width]}
+          loading="eager"
+          fetchpriority="high"
+          class=""
+        />
+      </a>
+    </div>
+
+    <div class="text-gray-500 my-2 h-7 md:h-9">
+      <a href="https://www.e-sante.fr/" class="grayscale hover:grayscale-0">
+        <Picture
+          src={ESante}
+          alt="E-sante.fr"
+          formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, ESante.width]}
+          loading="eager"
+          fetchpriority="high"
+          class=""
+        />
+      </a>
+    </div>
+
+    <div class="text-gray-500 my-2 h-7 md:h-9">
+      <a href="https://www.medisite.fr/" class="grayscale hover:grayscale-0">
+        <Picture
+          src={Medisite}
+          alt="Médisite"
+          formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, Medisite.width]}
+          loading="eager"
+          fetchpriority="high"
+          class=""
+        />
+      </a>
+    </div>
+  </div>
+</div>
