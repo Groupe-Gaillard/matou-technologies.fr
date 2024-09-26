@@ -29,7 +29,24 @@ const teamCollection = defineCollection({
   }),
 });
 
+const blogCollection = defineCollection({
+  schema: z.object({
+    draft: z.boolean(),
+    title: z.string(),
+    snippet: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }),
+    publishDate: z.coerce.date(),
+    author: z.string().default("Astroship"),
+    category: z.string(),
+    tags: z.array(z.string()),
+  }),
+});
+
 export const collections = {
   recruitment: recruitmentCollection,
   team: teamCollection,
+  blog: blogCollection,
 };
