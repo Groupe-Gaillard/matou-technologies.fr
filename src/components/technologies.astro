@@ -1,0 +1,80 @@
+---
+import { Icon } from "astro-icon/components";
+
+const technos = [
+  {
+    title: "Langages",
+    description: "JavaScript, PHP, Python",
+    icon: "fluent:code-16-filled",
+  },
+  {
+    title: "Frameworks",
+    description: "Symfony, React.js, Next.js",
+    icon: "fluent:glance-horizontal-32-regular",
+  },
+  {
+    title: "Bases de données",
+    description: "MySQL, PostgreSQL, MongoDB, SQL Server, Redis, Cassandra",
+    icon: "fluent:row-triple-24-regular",
+  },
+  {
+    title: "Technologies Web",
+    description: "HTML5, CSS3, RESTful API, GraphQL.",
+    icon: "fluent:iot-20-regular",
+  },
+  {
+    title: "Infrastructure",
+    description:
+      "Amazon Web Services (AWS), Google Cloud Platform (GCP), Bare metal",
+    icon: "fluent:cloud-20-regular",
+  },
+  {
+    title: "DevOps",
+    description:
+      "Docker, Kubernetes, Amazon ECS, Jenkins, Travis CI, Ansible, Puppet, Terraform",
+    icon: "fluent:board-20-regular",
+  },
+  {
+    title: "Data analyse",
+    description:
+      "Apache Hadoop, Spark, Kafka, Elasticsearch, Apache Flink, Apache Cassandra",
+    icon: "fluent:clipboard-data-bar-20-regular",
+  },
+  {
+    title: "Sécurité",
+    description: "Firewalls, IDS/IPS, VPN, DLP (Data Loss Prevention)",
+    icon: "fluent:lock-closed-key-16-regular",
+  },
+];
+---
+
+<div class="richtext fade-up mt-24">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4">
+    Nos Technologies
+  </h2>
+  <p class="mt-4 [text-wrap:balance] text-xl lg:text-2xl xl:text-4xl font-bold">
+    Nous sommes convaincus que pour répondre à vos besoins actuels et à venir,
+    vous devez pouvoir vous appuyer sur des technologies éprouvées. Les Matous
+    s’occupent de tout et choisissent {" "}<span class="text-matouSecondary"
+      >les technologies les plus adaptées à votre situation et à vos enjeux</span
+    >.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-4 mt-16 gap-8 md:gap-16">
+  {
+    technos.map((item) => (
+      <div class="flex flex-col gap-4 items-start group hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg transition-all md:-m-5 p-5">
+        <div class="flex gap-5 align-center">
+          <div class="mt-1 bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors rounded-lg grid place-items-center  p-2 w-10 h-10 shrink-0">
+            <Icon class="text-indigo-500" name={item.icon} size={24} />
+          </div>
+          <h3 class="font-semibold text-xl mt-3">{item.title}</h3>{" "}
+        </div>
+        <div>
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
