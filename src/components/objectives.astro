@@ -1,0 +1,48 @@
+---
+const objectives = [
+  {
+    title: "Alignement stratégique du système d’information",
+    description:
+      "Harmoniser la stratégie de développement des technologies de l'information avec la stratégie globale de l'entreprise pour assurer une cohérence parfaite.",
+  },
+  {
+    title: "Préparation pour l’industrie du futur",
+    description:
+      "La modernisation du système d'information permet à l'entreprise d'adopter de nouvelles technologies, notamment Data, générant ainsi une valeur ajoutée pour ses activités.",
+  },
+  {
+    title: "Optimisation des processus",
+    description:
+      "En analysant et en formalisant les processus métier, il devient possible d'identifier les inefficacités, les doublons et les opportunités d'amélioration.",
+  },
+  {
+    title: "Réduction des risques",
+    description:
+      "Une connaissance approfondie du système d'information aide à atténuer les risques opérationnels et de sécurité.",
+  },
+];
+---
+
+<div class="richtext fade-up mt-24" data-astro-cid-ownacw7g="">
+  <h3
+    class="text-2xl lg:text-3xl xl:text-5xl font-bold mt-4 [text-wrap:balance]">
+    Nos objectifs
+  </h3>
+  <p
+    class="mt-4 [text-wrap:balance] text-xl lg:text-2xl xl:text-4xl font-bold text-matouSecondary">
+    Pour vous permettre de retomber sur vos pattes en toute circonstance, <span
+      class="text-black"
+      >nous définissons ensemble vos objectifs lors de nos collaborations.</span
+    >
+  </p>
+</div>
+<div class="grid sm:grid-cols-2 md:grid-cols-4 mt-16 gap-8 md:gap-16">
+  {
+    objectives.map((item) => (
+      <div class="flex flex-col gap-4 items-start group hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg transition-all md:-m-5 p-5">
+        <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+        <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+      </div>
+    ))
+  }
+</div>

@@ -5,25 +5,25 @@ import Mission from "@components/mission.astro";
 import Expertise from "@components/expertise.astro";
 import Technologies from "@components/technologies.astro";
 import Hero from "@components/hero.astro";
-import Valors from "@components/valors.astro";
+import Objectives from "@components/objectives.astro";
 import Layout from "@layouts/Layout.astro";
 import Clients from "@components/clients.astro";
 import Partnerships from "@components/partnerships.astro";
+import Valors from "@components/valors.astro";
 ---
 
 <Layout
   title="Matou Technologies – Agence Technologique"
   description="On fait ronronner nos clients en les accompagnant dans leurs projets de transformation digitale et modernisation des outils. Agence du Groupe Gaillard, Energie Médical, Paramat, Medisite, E-santé, Planet et New Planet Média."
   footerMargin={false}>
-  <Hero />
   <Container>
+    <Hero />
     <Clients />
     <Mission />
-  </Container>
-  <Container>
+    <Valors />
     <Expertise />
     <Faq />
-    <Valors />
+    <Objectives />
     <Technologies />
   </Container>
   <Partnerships />
