@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@fontsource-variable/inter": "^5.0.16",
+    "@iconify-json/mdi": "^1.2.0",
     "@tailwindcss/typography": "^0.5.10",
     "sharp": "^0.33.2"
   }
