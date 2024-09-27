@@ -27,10 +27,10 @@ const valors = [
 ---
 
 <div class="richtext fade-up" data-astro-cid-ownacw7g="">
-  <h3
+  <h2
     class="text-2xl lg:text-3xl xl:text-5xl font-bold mt-4 [text-wrap:balance]">
     Nos Valeurs
-  </h3>
+  </h2>
   <p class="mt-4 [text-wrap:balance] text-xl lg:text-2xl xl:text-4xl font-bold">
     Nous caressons l'idée d'une relation client basée sur <span
       style="color: #F28705"
@@ -38,12 +38,12 @@ const valors = [
     >.
   </p>
 </div>
-<div class="grid sm:grid-cols-2 md:grid-cols-4 mt-16 gap-8 md:gap-16">
+<div class="grid sm:grid-cols-2 md:grid-cols-4 mt-4 gap-8 md:gap-16">
   {
     valors.map((item) => (
-      <div class="flex flex-col gap-4 items-start group hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg transition-all md:-m-5 p-5">
+      <div class="flex flex-col gap-4 items-start group hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg transition-all">
         <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-        <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        <p class="text-slate-500 leading-relaxed">{item.description}</p>
       </div>
     ))
   }
