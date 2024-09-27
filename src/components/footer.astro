@@ -1,5 +1,4 @@
 ---
-import Container from "@components/container.astro";
 import { Icon } from "astro-icon/components";
 
 const { margin } = Astro.props;
@@ -37,7 +36,7 @@ const footermenu = {
     "py-14 bg-slate-100 border-t border-slate-100",
     margin && "mt-10",
   ]}>
-  <Container>
+  <div class="max-w-screen-xl mx-auto px-5">
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
       <div class="sm:col-span-2 md:col-span-1">
         <a href="/" class="text-lg inline-block">
@@ -86,13 +85,13 @@ const footermenu = {
         </div>
       </div>
     </div>
-  </Container>
+  </div>
 
   <div class="mt-14 pt-8 px-5 border-t border-slate-200">
-    <Container>
+    <div class="max-w-screen-xl mx-auto px-5">
       <p class="text-center text-sm text-slate-600 [text-wrap:balance]">
         Copyright © {new Date().getFullYear()} Matou Technologies. All rights reserved.
       </p>
-    </Container>
+    </div>
   </div>
 </footer>
