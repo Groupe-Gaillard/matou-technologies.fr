@@ -1,6 +1,7 @@
 ---
 import { Picture } from "astro:assets";
 import heroImage from "@assets/hero-screenshot.png";
+import Link from "./ui/link.astro";
 ---
 
 <div class="max-w-screen-xl mx-auto px-5 mt-10">
@@ -14,10 +15,17 @@ import heroImage from "@assets/hero-screenshot.png";
 
     <div class="max-w-sm md:max-w-max lg:col-span-2">
       <h1
-        class="text-3xl lg:text-4xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-start text-matouSecondary">
+        class="text-3xl lg:text-4xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-start text-matouSecondary mb-5">
         Nous sommes les Matous.<br />
         <span class="font-bold text-indigo-950">Agence Technologique.</span>
       </h1>
+      <Link
+        href="https://web3templates.com/templates/astroship-pro-astro-saas-website-template"
+        target="_blank"
+        class="flex gap-1 items-center mr-5 justify-center text-matouSecondary bg-matouSecondary hover:matouPrimary"
+        rel="noopener">
+        Présentez nous votre projet
+      </Link>
     </div>
     <div class="py-3 lg:col-span-3 lg:-mr-44">
       <Picture
@@ -28,7 +36,7 @@ import heroImage from "@assets/hero-screenshot.png";
         widths={[240, 540, 720, heroImage.width]}
         loading="eager"
         fetchpriority="high"
-        class="rounded-lg shadow-lg"
+        class="rounded-lg shadow-lg my-5"
       />
     </div>
   </main>
