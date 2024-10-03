@@ -37,8 +37,8 @@ module.exports = {
         matouPrimaryDark01: "#023373",
         matouPrimaryLight01: "#636AF2",
         matouPrimaryLight02: "#BEF0FA",
-        matouSecondary: "#F28705",
-        matouSecondaryLight01: "#FFC000",
+        matouSecondary: "#59aba9",
+        matouAccent: "#31efb8",
         matouSecondaryLight02: "#FFA03A",
       },
       spacing: {
