@@ -2,8 +2,12 @@
 import { Picture, Image } from "astro:assets";
 import Card from "@components/card.astro";
 import IntegrationImg from "@assets/integrations.svg?url";
+import FeatureImgOne from "@assets/features/1.png";
 import FeatureImgTwo from "@assets/features/2.png";
 import FeatureImgThree from "@assets/features/3.png";
+import FeatureImgFour from "@assets/features/4.png";
+import FeatureImgFive from "@assets/features/5.png";
+import FeatureImgSix from "@assets/features/6.png";
 ---
 
 <div class="font-bold">
@@ -23,7 +27,7 @@ import FeatureImgThree from "@assets/features/3.png";
   <Card color="indigo" size="sm">
     <Fragment slot="image">
       <Picture
-        src={FeatureImgThree}
+        src={FeatureImgOne}
         alt="Feature image"
         formats={["avif", "webp"]}
         class="h-full w-full object-contain"
@@ -77,7 +81,7 @@ import FeatureImgThree from "@assets/features/3.png";
   <Card color="purple" size="sm">
     <Fragment slot="image">
       <Picture
-        src={FeatureImgTwo}
+        src={FeatureImgFour}
         alt="Feature image"
         formats={["avif", "webp"]}
         class="h-full w-full object-contain"
@@ -95,7 +99,7 @@ import FeatureImgThree from "@assets/features/3.png";
   <Card color="purple" size="sm">
     <Fragment slot="image">
       <Picture
-        src={FeatureImgTwo}
+        src={FeatureImgFive}
         alt="Feature image"
         formats={["avif", "webp"]}
         class="h-full w-full object-contain"
@@ -113,7 +117,7 @@ import FeatureImgThree from "@assets/features/3.png";
   <Card color="purple" size="sm">
     <Fragment slot="image">
       <Picture
-        src={FeatureImgTwo}
+        src={FeatureImgThree}
         alt="Feature image"
         formats={["avif", "webp"]}
         class="h-full w-full object-contain"

@@ -99,7 +99,7 @@ import Button from "@components/ui/button.astro";
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
 
-        result.innerHTML = "Envoie en cours ...";
+        result.innerHTML = "Envoi en cours ...";
 
         fetch("https://api.web3forms.com/submit", {
           method: "POST",
